@@ -1,0 +1,21 @@
+name: climarqm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - panel>=1.8
+  - bokeh
+  - folium
+  - pandas
+  - numpy
+  - xarray
+  - netcdf4
+  - h5netcdf
+  - rasterio
+  - rioxarray
+  - geopandas
+  - shapely
+  - pyproj
+  - fiona
+  - branca
+  - matplotlib

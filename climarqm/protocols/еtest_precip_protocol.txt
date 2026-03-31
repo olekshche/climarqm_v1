@@ -1,0 +1,14 @@
+{
+    !protocoltype! = "single_formula_calculation";
+    !grid_policy! = "strict_match";
+    !output! = "@result";
+    !output_format! = "PNG";
+
+    %rr% = "NetCDF";
+    %elevation% = "NetCDF";
+    %slope_degrees% = "NetCDF";
+
+    [
+        @result = %rr% * 0.22 * (%elevation% / global_max(%elevation%)) + %rr% * 0.55 * (%slope_degrees% / global_max(%slope_degrees%));
+    ]
+}
